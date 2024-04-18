@@ -40,9 +40,10 @@ function WeatherApp({ cityData }) {
     // Gündüz ve gece için uygun görseli seç
     const dayOrNight = IsDayTime ? "Day" : "Night";
 
-    // WeatherIcon'a göre uygun görseli seç
+    // Çektiğim hava durumu raporunda WeatherIcon sayılarla ifade edilmiş ve 44 farklı hava durumu mevcut switch case ile uygun en çok kullanılan görseli belirtilerek  seçildi 
     switch (WeatherIcon) {
       case 1:
+   
         return IsDayTime ?
           <div>
             <img className="images" src={Clear} alt="Clear" />
@@ -53,11 +54,15 @@ function WeatherApp({ cityData }) {
             <img className="images" src={ClearNight} alt="ClearNight" />;
 
           </div>
+      case 4:
+      case 5:
       case 6:
       case 7:
+      case 8:
       case 38:
         return IsDayTime ? <img className="images" src={Cloudy} alt="Cloudy" /> : <img className="images" src={CloudyNight} alt="CloudyNight" />;
-      case 3:
+        case 2:
+        case 3:
         return IsDayTime ? <img className="images" src={PartlySunny} alt="PartlySunny" /> : <img className="images" src={PartlySunnyNight} alt="PartlySunnyNight" />;
       case 12:
         return IsDayTime ? <img className="images" src={Rain} alt="Rain" /> : <img className="images" src={RainNight} alt="RainNight" />;
