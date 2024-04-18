@@ -14,11 +14,12 @@ function App() {
   const onSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await  axios.get(
-        `http://dataservice.accuweather.com/locations/v1/cities/search?apikey=%09${import.meta.env.VITE_API_KEY}&q=${citySearch}`
-      );
+      const response = await 
+      
+       axios.get(`http://dataservice.accuweather.com/locations/v1/cities/search?apikey=%09${import.meta.env.VITE_API_KEY}&q=${citySearch}&q`);
       if (response.data && response.data.length > 0) {
         setCityData(response.data[0]);
+        console.log(response.data)
         setError(null);
       } else {
         setError("City not found");

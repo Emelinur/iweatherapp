@@ -2,10 +2,7 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 
 import Clear from "./img/Clear.png";
-import ClearBg from "./img/ClearBg.png";
 import ClearNight from "./img/ClearNight.png";
-import ClearNightBg from "./img/ClearNightBg.png";
-
 
 import Cloudy from "./img/Cloudy.png";
 import CloudyNight from "./img/CloudyNight.png";
@@ -20,12 +17,14 @@ import Thunderstorm from "./img/Thunderstorm.png";
 import ThunderstormNight from "./img/ThunderstormNight.png";
 
 function WeatherApp({ cityData }) {
+ 
   const [data, setData] = useState("");
   useEffect(() => {
     const fetchWeather = async () => {
       try {
         const response = await axios.get(`http://dataservice.accuweather.com/currentconditions/v1/${cityData.Key}?apikey=${import.meta.env.VITE_API_KEY}`);
         setData(response.data[0]);
+        console.log(response.data)
       } catch (error) {
         console.error(error);
       }
@@ -70,13 +69,28 @@ function WeatherApp({ cityData }) {
   };
 
   return (
-    <div className="scard">
-      <h2>{cityData.EnglishName}</h2>
-      <div className="row1">
-        <div className="col-left">{data ? Math.ceil(data.Temperature.Metric.Value) : null}°C</div>
-        <div className="col-right">{renderWeatherIcon()}</div>
-      </div>
+    <>
+    {data.IsDayTime === true && (
+    <div className="scardDay">
+    <h2>{cityData.EnglishName}</h2>
+    <div className="row1">
+      <div className="col-left">{data ? Math.ceil(data.Temperature.Metric.Value) : null}°C</div>
+      <div className="col-right">{renderWeatherIcon()}</div>
     </div>
+  </div>
+    )}
+    {data.IsDayTime === false && (
+          <div className="scardNigth">
+          <h2>{cityData.EnglishName}</h2>
+          <div className="row1">
+            <div className="col-left">{data ? Math.ceil(data.Temperature.Metric.Value) : null}°C</div>
+            <div className="col-right">{renderWeatherIcon()}</div>
+          </div>
+        </div>
+    )}
+
+</>
+  
   );
 }
 
