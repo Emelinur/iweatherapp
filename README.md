@@ -5,7 +5,7 @@
 <img src="weatherapp/src/Componets/img/iweatherappsearch.png" alt="iweatherappsearch">
 <img src="weatherapp/src/Componets/img/iweatherappday.png" alt="iweatherappday">
 <img src="iweatherappnigth.png" alt="iweatherappnigth">
-![iweatherappday([https://example.com/path/to/image.png](https://github.com/Emelinur/iweatherapp/blob/master/src/Componets/img/iweatherappday.png))
+![iweatherappday](https://github.com/Emelinur/iweatherapp/blob/master/src/Componets/img/iweatherappday.png))
 
 #### Kurulum
 <p>
