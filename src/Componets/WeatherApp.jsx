@@ -94,7 +94,6 @@ function WeatherApp({ cityData }) {
           />
         );
       case 12:
-
       case 18:
       case 19:
       case 21:
