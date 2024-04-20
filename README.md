@@ -2,10 +2,11 @@
 #### Proje Açıklaması:
 <p>Bu proje, kullanıcıların hava durumunu görmelerine olanak tanıyan basit bir hava durumu uygulamasıdır.</p>
 
-<img src="weatherapp/src/Componets/img/iweatherappsearch.png" alt="iweatherappsearch">
-<img src="weatherapp/src/Componets/img/iweatherappday.png" alt="iweatherappday">
-<img src="iweatherappnigth.png" alt="iweatherappnigth">
-![iweatherappday](https://github.com/Emelinur/iweatherapp/blob/master/src/Componets/img/iweatherappday.png))
+![iweatherappsearch](weatherapp/src/Componets/img/iweatherappsearch.png)
+![iweatherappday](weatherapp/src/Componets/img/iweatherappday.png)
+![iweatherappnigth](weatherapp/src/Componets/img/iweatherappnigth.png)
+
+
 
 #### Kurulum
 <p>
