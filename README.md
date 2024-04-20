@@ -4,8 +4,7 @@
 
 <img src="weatherapp/src/Componets/img/iweatherappsearch.png" alt="iweatherappsearch">
 <img src="weatherapp/src/Componets/img/iweatherappday.png" alt="iweatherappday">
-<img src="weatherapp/src/Componets/img/iweatherappnigth.png" alt="iweatherappnigth">
-
+<img src="iweatherappnigth.png" alt="iweatherappnigth">
 #### Kurulum
 <p>
 Vite kullanılarak geliştirilmiştir.
