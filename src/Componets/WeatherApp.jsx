@@ -48,7 +48,9 @@ function WeatherApp({ cityData }) {
       case 1:
       case 2:
       case 3:
+      case 30:
       case 33:
+      case 34:
         return IsDayTime ? (
           <div>
             <img className="images" src={Clear} alt="Clear" />
@@ -69,6 +71,7 @@ function WeatherApp({ cityData }) {
       case 35:
       case 36:
       case 37:
+      case 38:
       case 39:
       case 40:
       case 41:
@@ -97,6 +100,7 @@ function WeatherApp({ cityData }) {
       case 19:
       case 21:
       case 26:
+      case 29:
         return IsDayTime ? (
           <img className="images" src={Rain} alt="Rain" />
         ) : (
