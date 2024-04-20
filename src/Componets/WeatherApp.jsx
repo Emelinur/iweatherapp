@@ -49,7 +49,6 @@ function WeatherApp({ cityData }) {
       case 2:
       case 3:
       case 33:
-    
         return IsDayTime ? (
           <div>
             <img className="images" src={Clear} alt="Clear" />
@@ -59,7 +58,6 @@ function WeatherApp({ cityData }) {
             <img className="images" src={ClearNight} alt="ClearNight" />;
           </div>
         );
-
       case 5:
       case 6:
       case 7:
