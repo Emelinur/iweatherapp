@@ -75,6 +75,7 @@ function WeatherApp({ cityData }) {
       case 40:
       case 41:
       case 42:
+      case 43:
       case 44:
         return IsDayTime ? (
           <img className="images" src={Cloudy} alt="Cloudy" />
